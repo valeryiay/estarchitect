@@ -36,10 +36,10 @@ function initAnimation() {
     const bgSlider = document.querySelector(".section-hero__bg-slider");
     bgSlider && (bgSlider.style.backgroundImage = `url(${bgSlider.dataset.src})`);
 
-    if (container && isFirstLoad) {
+    // if (container && isFirstLoad) {
         document.querySelectorAll('.hero-animate')
             .forEach(el => setTimeout(() => el.classList.add('animated'),3000));
         sessionStorage.setItem("firsLoad", "true");
-    }
+    // }
 
 }
