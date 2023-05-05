@@ -67,7 +67,7 @@ gulp.task("watch", () => {
     gulp.watch("src/images/**/*", gulp.series("images"));
     gulp.watch('./**/*.njk', gulp.series("nunjucks"));
     gulp.watch('./src/templates/**/*.njk', gulp.series("pages"));
-    gulp.watch('./gen/**/*.js', gulp.series("webserver"));
+    // gulp.watch('./gen/**/*.js', gulp.series("webserver"));
 
 });
 

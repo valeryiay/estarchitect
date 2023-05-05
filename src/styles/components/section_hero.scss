@@ -11,6 +11,25 @@
   }
 }
 
+.hero .container {
+  position: relative;
+}
+
+.hero-banner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 55%;
+  z-index: -1;
+}
+
+.hero-content {
+  width: 100%;
+  margin-inline-start: auto;
+  padding-block: 10%;
+}
+
 .hero-content {
   position: absolute;
   top: 0;
@@ -61,16 +80,14 @@
   }
   8% {
     opacity: 1;
-    //transform: scale(1.05);
     animation-timing-function: ease-out;
   }
   17% {
     opacity: 1;
-    //transform: scale(1.09);
   }
   25% {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.05) translate(-3rem);
     filter: brightness(60%);
   }
   100% {

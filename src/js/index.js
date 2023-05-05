@@ -1,3 +1,5 @@
+window.scrollTo(0, 0);
+
 window.addEventListener("DOMContentLoaded", function () {
     initAnimation();
     const preloader = document.getElementById("preloader");
@@ -11,13 +13,17 @@ window.addEventListener("DOMContentLoaded", function () {
     }, 100);
     window.addEventListener("scroll", throttled);
 
-    $(".slick-slider").slick({
+    $(".portfolio__carousel-list").slick({
         centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
+        centerPadding: "100px",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // autoplay: true,
+        autoplaySpeed: 1000,
+        infinite: true,
         dots: false,
-        nextArrow: $('.slick-slider__next'),
-        prevArrow: $('.slick-slider__back'),
+        nextArrow: $(".portfolio__btn-right"),
+        prevArrow: $(".portfolio__btn-left"),
     });
 })
 
