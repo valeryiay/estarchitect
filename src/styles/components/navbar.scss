@@ -1,3 +1,9 @@
+.header--dark {
+  #menuToggle span {
+    background: var(--roman-silver);
+  }
+}
+
 #menuToggle {
   display: block;
   position: relative;
@@ -66,8 +72,7 @@
 
 #menu {
   position: absolute;
-  width: 300px;
-  height: 100vh + 50;
+  height: calc(100vh + 50px);
   margin: -100px 0 0 -50px;
   padding: 125px 50px 50px;
   background: rgba(0,0,0,0.8);

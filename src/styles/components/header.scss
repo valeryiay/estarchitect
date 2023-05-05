@@ -7,14 +7,46 @@
   border-bottom: 1px solid var(--logo);
   z-index: 10;
 
-  &.dark {
+  &.header--dark {
+    color: var(--roman-silver);
+    border-bottom: 1px solid var(--roman-silver);
+
+    .header__contact {
+      svg path{
+        fill: var(--roman-silver);
+      }
+
+      &:hover {
+        svg path{
+          fill: var(--blue);
+        }
+      }
+    }
+  }
+
+  &.header--blur {
     transition: 0.3s;
     backdrop-filter: blur(2px);
   }
 
   &__nav,
-  &__contact {
-    width: 100px;
+  &__right {
+    width: 20%;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  &__lng {
+    margin-left: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--blue);
+    }
   }
 
   &__container {
