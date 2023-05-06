@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function () {
         centerPadding: "100px",
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         infinite: true,
         dots: false,
@@ -36,10 +36,10 @@ function initAnimation() {
     const bgSlider = document.querySelector(".section-hero__bg-slider");
     bgSlider && (bgSlider.style.backgroundImage = `url(${bgSlider.dataset.src})`);
 
-    if (container && isFirstLoad) {
+    // if (container && isFirstLoad) {
         document.querySelectorAll('.hero-animate')
             .forEach(el => setTimeout(() => el.classList.add('animated'),3000));
         sessionStorage.setItem("firsLoad", "true");
-    }
+    // }
 
 }

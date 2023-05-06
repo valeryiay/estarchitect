@@ -32,16 +32,16 @@
     }
 
     &:hover {
-      img {
-        filter: brightness(40%);
-      }
-
       .portfolio__carousel-content {
+        backdrop-filter: blur(2px);
         opacity: 1;
+        background-color: rgba(0, 0, 0, 0.1)
       }
     }
 
     img {
+      display: block;
+      margin: 0;
       position: relative;
       background-blend-mode: multiply;
       width: 100%;
@@ -51,52 +51,13 @@
     }
 
     .portfolio__carousel-content {
+      padding: 3rem;
       color: var(--logo);
       opacity: 0;
       transition: all 0.3s;
       position: absolute;
-      top: 3rem;
-      right: 6rem;
+      top: 0rem;
+      right: 3rem;
     }
   }
 }
-
-//.portfolio .slider {
-//  --item-gap: 16px;
-//}
-
-//.portfolio-card {
-//  position: relative;
-//  background-color: transparent;
-//  transition: var(--cubic-ease-out);
-//}
-
-//.portfolio-card .img-cover {
-//  transition: var(--cubic-ease-out);
-//}
-
-//.portfolio-card .card-content {
-//  position: absolute;
-//  top: 50%;
-//  left: 50%;
-//  text-align: center;
-//  width: 100%;
-//  transform: translate(-55%, -50%);
-//  opacity: 0;
-//  transition: var(--cubic-ease-out);
-//  z-index: 1;
-//}
-//
-//.portfolio-card .card-text {
-//  color: var(--white);
-//}
-
-//.portfolio-card:is(:hover, :focus-within) .img-cover {
-//  opacity: 0.1;
-//  transform: scale(0.95);
-//}
-//
-//.portfolio-card:is(:hover, :focus-within) .card-content {
-//  transform: translate(-50%, -50%);
-//  opacity: 1;
-//}

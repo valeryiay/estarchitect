@@ -45,6 +45,10 @@ body {
   }
 }
 
+main {
+  min-height: 100vh;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
