@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function () {
         centerPadding: "100px",
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         infinite: true,
         dots: false,
